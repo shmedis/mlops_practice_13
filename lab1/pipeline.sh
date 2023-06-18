@@ -1,13 +1,12 @@
-#!/bin/bash
-
-# Создание данных
-python data_creation.py
-
-# Предобработка данных
-python data_preprocessing.py
-
-# Подготовка и обучение модели
-python model_preparation.py
-
-# Тестирование модели
-python model_testing.py
+echo "----Create Dataset (begin)-----"
+python3 /Users/dsshmelev/mlops_practice_13/lab1/data_creation.py
+echo "----Create Dataset (end)-----"
+echo "----Prepare Dataset (begin)-----"
+python3 /Users/dsshmelev/mlops_practice_13/lab1/data_preprocessing.py
+echo "----Prepare Dataset (end)-----"
+echo "----Train the Model (begin)-----"
+python3 /Users/dsshmelev/mlops_practice_13/lab1/model_preparation.py
+echo "----Train the Model (begin)-----"
+echo "----Use the Model for Prediction (begin)-----"
+python3 /Users/dsshmelev/mlops_practice_13/lab1/model_testing.py
+echo "----Use the Model for Prediction (end)-----"
