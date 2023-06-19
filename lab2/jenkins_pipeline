@@ -1,10 +1,40 @@
 pipeline {
     agent any
+
     stages {
-     stage('Hello') {
-                steps {
-                    echo 'Hello world'
-                }
+        stage('Data Collection') {
+            steps {
+                // Здесь выполняется сбор данных
+                // и сохранение их в папку lab2
+                sh 'python data_collect.py'
             }
-     }
+        }
+        stage('Data Preprocessing') {
+            steps {
+                // Здесь выполняется предварительная обработка данных
+                // и сохранение обработанных данных в папку lab2/datasets
+                sh 'python data_prepare.py'
+            }
+        }
+        stage('Model Training') {
+            steps {
+                // Здесь выполняется обучение модели и сохранение модели в папку lab2/models
+                sh 'python model_create.py'
+            }
+        }
+        stage('Model Evaluation') {
+            steps {
+                // Здесь выполняется загрузка тестовых данных, загрузка модели
+                // и вычисление тестовых метрик
+                sh 'python model_test.py'
+            }
+        }
+    }
+
+    post {
+        always {
+            // Сохранение конвейера в файл
+            archiveArtifacts artifacts: 'Jenkinsfile', fingerprint: true
+        }
+    }
 }
