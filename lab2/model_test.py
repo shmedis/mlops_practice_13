@@ -22,8 +22,8 @@ def evaluate_model(test_data, target_column, model_path):
     # Выполнение анализа качества модели и других необходимых операций
 
 # Пример использования
-test_file_path = "lab2/datasets/test.csv"
-model_path = "lab2/models/model.pkl"
+test_file_path = "/Users/dsshmelev/mlops_practice_13/lab2/datasets/test.csv"
+model_path = "/Users/dsshmelev/mlops_practice_13/lab2/models/model.pkl"
 test_data = load_test_data(test_file_path)
 target_column = 'Survived'
 evaluate_model(test_data, target_column, model_path)
@@ -49,7 +49,7 @@ def evaluate_model(test_data, target_column, model_path):
     print("F1 Score:", f1)
 
 # Пример использования
-test_file_path = "lab2/datasets/test.csv"
-model_path = "lab2/models/model.pkl"
+test_file_path = "/Users/dsshmelev/mlops_practice_13/lab2/datasets/test.csv"
+model_path = "/Users/dsshmelev/mlops_practice_13/lab2/models/model.pkl"
 test_data = load_test_data(test_file_path)
 evaluate_model(test_data, target_column, model_path)

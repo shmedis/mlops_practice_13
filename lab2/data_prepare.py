@@ -47,5 +47,5 @@ def prepare_dataset(data, target_column, test_size, random_state, save_path):
 target_column = "Survived"
 test_size = 0.2
 random_state = 42
-save_path = "lab2/datasets"
+save_path = "/Users/dsshmelev/mlops_practice_13/lab2/datasets"
 prepare_dataset(preprocessed_data, target_column, test_size, random_state, save_path)

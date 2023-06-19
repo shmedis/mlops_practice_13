@@ -14,8 +14,8 @@ def train_model(train_data, target_column, save_path):
         pickle.dump(model, f)
 
 # Пример использования
-train_file_path = "lab2/datasets/train.csv"
+train_file_path = "/Users/dsshmelev/mlops_practice_13/lab2/datasets/train.csv"
 target_column = "Survived"
-save_path = "lab2/models"
+save_path = "/Users/dsshmelev/mlops_practice_13/lab2/models"
 train_data = load_data(train_file_path)
 train_model(train_data, target_column, save_path)
