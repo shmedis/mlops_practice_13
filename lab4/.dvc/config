@@ -3,4 +3,3 @@
     remote = datasets
 ['remote "datasets"']
     url = gdrive://1q-rIZO7RSHQvDCpIbfQIet_cLOXZK9Kq
-    gdrive_use_service_account = true
