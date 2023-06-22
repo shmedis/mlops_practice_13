@@ -2,4 +2,4 @@
     autostage = true
     remote = datasets
 ['remote "datasets"']
-    url = gdrive://1q-rIZO7RSHQvDCpIbfQIet_cLOXZK9Kq
+    url = gdrive://1q-rIZO7RSHQvDCpIbfQIet_cLOXZK9Kq?usp=sharing
